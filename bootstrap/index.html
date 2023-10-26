@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentaUtil</title>
+    <!--CDN Bootstrap--> >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--CDN Bootstrap ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <!--ICON-->
+          <a class="navbar-brand" href="/">VentaUtil</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos</a>
+                <div class="dropdown-menu" aria-labelledby="categoriaDropdown">
+                    <a class="dropdown-item" href="">Ropa Masculina</a>
+                    <a class="dropdown-item" href="">Accesorios</a>
+                    <a class="dropdown-item" href="">Componentes</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Perfil</a>
+              </li>
+            </ul>
+            <div class="d-none d-md-flex gap-2">
+            
+                <a class="nav-item nav-link p-1" href="">
+                    <!--Usuario-->
+                    <i class="bi bi-person-square" style="font-size: 1.2rem;"></i>
+                </a>
+            </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!--Mobile-->
+            <img 
+            src="https://img.freepik.com/foto-gratis/accesorios-sueter-cinturon-ropa-masculina_1203-6421.jpg?w=740&t=st=1698280372~exp=1698280972~hmac=84a9f20fab16ead3216988748b11b04e240b072dc8ab116e942f5c0941676522"
+            class="d-block d-md-none w-100" 
+            alt="...">
+            <!--Desktop-->
+            <img 
+            src="https://img.freepik.com/foto-gratis/ropa-hombre_23-2147635503.jpg?w=1380&t=st=1698280318~exp=1698280918~hmac=7163ba5302bdf6c4b74a420533610b7edb05c30e41f77398610f6306286ca960" 
+            class="d-none d-md-block w-100" 
+            alt="...">
+            <div class="carousel-caption d-block">
+              <h3 class="fs-2">Ropa Masculina</h3>
+              <p class="fs-5">De maxima calidad y resistencia!</p>
+              <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Explorar el menu</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mobile-->
+            <img 
+            src="https://img.freepik.com/foto-gratis/cadena-dorada-lujosa-brillante_23-2149635280.jpg?w=740&t=st=1698280399~exp=1698280999~hmac=bcf9041c88119edd7882ebac06adfa3d4061f177d06bb86edd6d03b30354641c"
+            class="d-block d-md-none w-100" 
+            alt="...">
+            <!--Desktop-->
+            <img 
+            src="https://img.freepik.com/foto-gratis/bodegon-kit-carrera-modelo_23-2150229753.jpg?w=1380&t=st=1698280441~exp=1698281041~hmac=c4f4f35bf83ddf849a005dcc7ae22ce832c180d142f8cf0d537bf1d770a0abf2" 
+            class="d-none d-md-block w-100" 
+            alt="...">
+            <div class="carousel-caption d-block text-start">
+              <h3 class="fs-2">Accesorios</h3>
+              <p class="fs-5">Bañados en oro!</p>
+              <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Explorar el menu</a></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mobile-->
+            <img 
+            src="https://img.freepik.com/foto-gratis/hermosa-pareja-pasa-tiempo-cocina_1157-22126.jpg?w=740&t=st=1698280615~exp=1698281215~hmac=79be3fb9356047dfd9d7fb41e4ba2fda4839089079ec8a79c32a88c5303d226d" 
+            class="d-block d-md-none w-100" 
+            alt="...">
+            <!--Desktop-->
+            <img 
+            src="https://img.freepik.com/foto-gratis/pareja-disfrutando-tiempo-calidad-casa_23-2149262112.jpg?w=1380&t=st=1698280587~exp=1698281187~hmac=19301df69e91a2390925249a7c0de5fefffe9573b3c5bfbe6f6d7a831cbee5d1" 
+            class="d-none d-md-block w-100" 
+            alt="...">
+            <div class="carousel-caption d-block">
+              <h3 class="fs-2">Componentes</h3>
+              <p class="fs-5">Nuevos y usados!</p>
+              <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Explorar el menu</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <main>
+        <!--Productos-->
+        <!--Selector de categorias-->
+
+        <section class="container" id="selector-categorias">
+            <p class="fs-2">Seleccionar Productos</p>
+            <div class="row gap-4">
+                <div class="col d-flex justify-content-center p-0 gap-4">
+                    <a href="#ropa-masculina" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+                        <img src="/assets/categorias/ropamasculina.png" alt="ropa-masculina" style="width: 25px; height: 25px;"> 
+                        <span class="fs-4 text-dark-emphasis">Ropa Masculina</span>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center p-0 gap-4">
+                    <a href="#accesorios" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+                        <img src="/assets/categorias/accesorios.png" alt="accesorios" style="width: 25px; height: 25px;">
+                        <span class="fs-4 text-dark-emphasis">Accesorios</span>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center p-0 gap-4">
+                    <a href="#componentes" class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+                        <img src="/assets/categorias/electrodomesticos.png" alt="componentes" style="width: 25px; height: 25px;">
+                        <span class="fs-4 text-dark-emphasis">Componentes</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Categorias Productos-->
+        <section class="container-fluid" id="categorias">
+            <section class="text-center mb-5" id="ropa-masculina">
+                <h3 class="display-6">Ropa Masculina</h3>
+                <div id="contenedor-ropa-masculina" class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                    <!--Producto-->
+                    
+                </div>
+            </section>
+            <section class="text-center mb-5" id="accesorios">
+                <h3 class="display-6">Accesorios</h3>
+                <div id="contenedor-accesorios" class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                    <!--Producto-->
+                    
+                </div>
+            </section>
+            <section class="text-center mb-5" id="componentes">
+                <h3 class="display-6">Componentes</h3>
+                <div id="contenedor-componentes" class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+                    <!--Producto-->
+                    
+                </div>
+            </section>
+        </section>
+
+      </main>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">VentaUtil</a>
+                <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 VentaUtil, Inc</span>
+
+            </div>
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-whatsapp"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href=""><i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </footer>
+      </div>
+
+      <!--CDN Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <!--JAVASCRIPT-->
+      <script type="module" src="lib/pages/home.js"></script>
+</body>
+</html>
